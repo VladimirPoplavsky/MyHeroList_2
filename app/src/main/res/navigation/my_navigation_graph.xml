@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/my_navigation_graph"
+    app:startDestination="@id/singleItemFragment">
+
+    <fragment
+        android:id="@+id/singleItemFragment"
+        android:name="com.firstapp.myherolist_2.SingleItemFragment"
+        android:label="SingleItemFragment" >
+        <action
+            android:id="@+id/action_singleItemFragment_to_batmanFragment"
+            app:destination="@id/batmanFragment" />
+        <action
+            android:id="@+id/action_singleItemFragment_to_bikerMiceFragment"
+            app:destination="@id/bikerMiceFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/batmanFragment"
+        android:name="com.firstapp.myherolist_2.BatmanFragment"
+        android:label="fragment_batman"
+        tools:layout="@layout/fragment_batman" />
+    <fragment
+        android:id="@+id/bikerMiceFragment"
+        android:name="com.firstapp.myherolist_2.BikerMiceFragment"
+        android:label="fragment_biker_mice"
+        tools:layout="@layout/fragment_biker_mice" />
+</navigation>
